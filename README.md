@@ -30,6 +30,8 @@ En cambio dentro del Bounded Context, un mismo concepto (como "Compra") puede es
 
 <img width="718" height="291" alt="image" src="https://github.com/user-attachments/assets/f5598c3e-585d-4531-9957-db4fdf4d2557" />
 
+### Event storming
+Es una técnica colaborativa que ayuda a descubrir cómo funciona un negocio y cuáles son sus requerimientos, identificando eventos, actores, servicios externos y acciones relacionadas con las reglas de negocio. 
 
 ## Referencias
 - [1] “Domain Driven Design: principios, beneficios y elementos — Primera Parte”, Víctor Martínez.[https://naylampmechatronics.com/blog/45_tutorial-mpu6050-acelerometro-y-giroscopio.html](https://medium.com/@vandresmartinez/granularidad-de-microservicios-3d58f3002120)
