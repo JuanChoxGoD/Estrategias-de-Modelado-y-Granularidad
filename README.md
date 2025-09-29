@@ -2,11 +2,19 @@
 ## Maria Jose Garcia, Santiago Torres Porras, Juan Diego Rojas Espitia. 
 ---
 ## ¿Ques es la granularidad?
-La granularidad determina qué tan grande o pequeño debe ser un microservicio en términos de las responsabilidades que maneja. La granularidad de los servicios es un aspecto fundamental al diseñar arquitecturas de microservicios. Una correcta granularidad nos permite aprovechar al máximo las ventajas de dicha arquitectura o por el contrario, terminar con una arquitectura llena de problemas y difícil de mantener.[1]
+La granularidad determina qué tan grande o pequeño debe ser un microservicio en términos de las responsabilidades que maneja. La granularidad de los servicios es un aspecto fundamental al diseñar arquitecturas de microservicios. Una correcta granularidad nos permite aprovechar al máximo las ventajas de dicha arquitectura o por el contrario, terminar con una arquitectura llena de problemas y difícil de mantener [1]
 ## Principios de diseño para definir la granularidad de los microservicios
 La definición de la granularidad en los microservicios debe centrarse en alcanzar un equilibrio adecuado, evitando caer en extremos como servicios demasiado grandes que terminan siendo un monolito disfrazado, o servicios demasiado pequeños que se convierten en nano-servicios difíciles de gestionar. Para guiar este diseño, se destacan principios fundamentales: la alta cohesión, que asegura que cada servicio tenga una responsabilidad clara; el bajo acoplamiento, que reduce dependencias entre servicios; la escalabilidad independiente, que permite crecer según las necesidades específicas; y la autonomía, que garantiza que cada microservicio pueda operar y evolucionar por sí mismo.
 ## Domain-Driven Design (DDD)
 El enfoque de diseño de aplicaciones busca alinear la arquitectura del software con los objetivos del negocio. La idea central es que los desarrolladores construyan modelos directamente relacionados con los dominios específicos de la organización, utilizando un lenguaje ubicuo que unifique términos técnicos y de negocio. De esta manera, se facilita la comunicación entre equipos, se evitan malentendidos y se logra que el software refleje con mayor fidelidad las necesidades reales del negocio; La idea es modelar el software según cómo funciona realmente el negocio, no solo según la tecnología.
+### ¿Cómo funcionan los microservicios de diseño impulsado por dominio?
+Se dividen en dos fases:
+#### Fase estratégica
+Es una fase de lluvia de ideas donde los propietarios de productos, expertos en el dominio, desarrolladores y analistas se reúnen para compartir conocimientos, diseñar estrategias y crear un plan inicial.
+#### Fase táctica
+Acabamos de determinar los contextos delimitados y sus relaciones en la fase estratégica. Ahora bien, esta etapa del diseño orientado al dominio se centra en el modelado con la ayuda de contextos.
+## Bounded Context
+En Domain Driven Desing, un Bounded Context es poner límites para que un modelo del negocio tenga un significado claro y no se confunda con otras partes del sistema.
 ## Referencias
 - [1] “Domain Driven Design: principios, beneficios y elementos — Primera Parte”, Víctor Martínez.[https://naylampmechatronics.com/blog/45_tutorial-mpu6050-acelerometro-y-giroscopio.html](https://medium.com/@vandresmartinez/granularidad-de-microservicios-3d58f3002120)
 - [2] “Granularidad de microservicios”, Jonathan Loscalzo. [https://medium.com/@jonathanloscalzo/domain-driven-design-principios-beneficios-y-elementos-primera-parte-aad90f30aa35](https://medium.com/@jonathanloscalzo/domain-driven-design-principios-beneficios-y-elementos-primera-parte-aad90f30aa35)
