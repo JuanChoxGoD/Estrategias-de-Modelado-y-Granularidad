@@ -1,7 +1,7 @@
 # Estrategias de Modelado y Granularidad
-## Maria Jose Garcia, Santiago Torres Porras, Juan Diego Rojas Espitia. 
+## María José García, Santiago Torres Porras, Juan Diego Rojas Espitia. 
 ---
-## ¿Ques es la granularidad?
+## ¿Que es la granularidad?
 Las estrategias de modelado y granularidad en microservicios buscan definir límites claros del dominio con DDD y bounded contexts. Usando Event Storming se descubren eventos y dependencias para dividir servicios cohesionados y autónomos. La clave es evitar units demasiado finas o demasiado gruesas, reducir el acoplamiento y alinearlos con los cambios del negocio para escalar con seguridad y rapidez.
 La granularidad determina qué tan grande o pequeño debe ser un microservicio en términos de las responsabilidades que maneja. La granularidad de los servicios es un aspecto fundamental al diseñar arquitecturas de microservicios. Una correcta granularidad nos permite aprovechar al máximo las ventajas de dicha arquitectura o por el contrario, terminar con una arquitectura llena de problemas y difícil de mantener [1]
 ## Principios de diseño para definir la granularidad de los microservicios
@@ -43,3 +43,4 @@ Por otro lado, una mala división genera duplicación de información o procesos
 - [1] “Domain Driven Design: principios, beneficios y elementos — Primera Parte”, Víctor Martínez.[https://naylampmechatronics.com/blog/45_tutorial-mpu6050-acelerometro-y-giroscopio.html](https://medium.com/@vandresmartinez/granularidad-de-microservicios-3d58f3002120)
 - [2] “Granularidad de microservicios”, Jonathan Loscalzo. [https://medium.com/@jonathanloscalzo/domain-driven-design-principios-beneficios-y-elementos-primera-parte-aad90f30aa35](https://medium.com/@jonathanloscalzo/domain-driven-design-principios-beneficios-y-elementos-primera-parte-aad90f30aa35)
 - [3] “¿Que es un Bounded Context?”, Cecilio Álvarez Caules. [https://www.arquitecturajava.com/que-es-un-bounded-context/](https://www.arquitecturajava.com/que-es-un-bounded-context/)
+- [4] “Event storming”, Tautvydas Bagocius. [https://www.arquitecturajava.com/que-es-un-bounded-context/](https://www.arquitecturajava.com/que-es-un-bounded-context/)
