@@ -14,7 +14,17 @@ Es una fase de lluvia de ideas donde los propietarios de productos, expertos en 
 #### Fase táctica
 Acabamos de determinar los contextos delimitados y sus relaciones en la fase estratégica. Ahora bien, esta etapa del diseño orientado al dominio se centra en el modelado con la ayuda de contextos.
 ## Bounded Context
-En Domain Driven Desing, un Bounded Context es poner límites para que un modelo del negocio tenga un significado claro y no se confunda con otras partes del sistema.
+En Domain Driven Desing, un Bounded Context es poner límites para que un modelo del negocio tenga un significado claro y no se confunda con otras partes del sistema. El uso de Bounded Context o contextos limitados hace referencia a una buena práctica a nivel de diseño que cada día esta más en uso.
+<img width="958" height="502" alt="image" src="https://github.com/user-attachments/assets/a9e76718-caf5-408d-81fd-47c8d33d02e3" />
+Un modelo de clases nos ayuda a representar mejor la lógica del negocio. A partir de aquí podemos ver qué partes del sistema forman un mismo contexto y cuáles deben separarse. Cuando los modelos de clases crecen llega un momento que su tamaño es excesivo y uno de los patrones de diseño que se implementa es el de Bounded Context por el cual el modelo se divide en “submodelos” cada uno especializado en un área concreta. [3]
+<img width="1157" height="632" alt="image" src="https://github.com/user-attachments/assets/76b02994-1d8f-433c-9ca9-cd986aac057c" />
+Cuando el modelo de dominio se separa siempre quedan lo que se denominan los límites . ES decir por ejemplo cuando gestionamos el contexto A más orientado a Personas es posible que necesitemos tener un conocimiento muy genérico de que esa persona realiza compras y la clase que se implemente será algo como:
+<img width="241" height="180" alt="image" src="https://github.com/user-attachments/assets/e2f8ce6c-7754-4c74-82f9-c8a42bbc6719" />
+En cambio dentro del Bounded Context, un mismo concepto (como "Compra") puede estar mucho más detallado y con relaciones que en otros lugares del sistema donde solo necesitan una versión simple.
+<img width="718" height="291" alt="image" src="https://github.com/user-attachments/assets/f5598c3e-585d-4531-9957-db4fdf4d2557" />
+
+
 ## Referencias
 - [1] “Domain Driven Design: principios, beneficios y elementos — Primera Parte”, Víctor Martínez.[https://naylampmechatronics.com/blog/45_tutorial-mpu6050-acelerometro-y-giroscopio.html](https://medium.com/@vandresmartinez/granularidad-de-microservicios-3d58f3002120)
 - [2] “Granularidad de microservicios”, Jonathan Loscalzo. [https://medium.com/@jonathanloscalzo/domain-driven-design-principios-beneficios-y-elementos-primera-parte-aad90f30aa35](https://medium.com/@jonathanloscalzo/domain-driven-design-principios-beneficios-y-elementos-primera-parte-aad90f30aa35)
+- [3] “¿Que es un Bounded Context?”, Cecilio Álvarez Caules. [https://www.arquitecturajava.com/que-es-un-bounded-context/](https://www.arquitecturajava.com/que-es-un-bounded-context/)
