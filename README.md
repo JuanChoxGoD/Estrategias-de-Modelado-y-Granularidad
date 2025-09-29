@@ -2,6 +2,7 @@
 ## Maria Jose Garcia, Santiago Torres Porras, Juan Diego Rojas Espitia. 
 ---
 ## ¿Ques es la granularidad?
+Las estrategias de modelado y granularidad en microservicios buscan definir límites claros del dominio con DDD y bounded contexts. Usando Event Storming se descubren eventos y dependencias para dividir servicios cohesionados y autónomos. La clave es evitar units demasiado finas o demasiado gruesas, reducir el acoplamiento y alinearlos con los cambios del negocio para escalar con seguridad y rapidez.
 La granularidad determina qué tan grande o pequeño debe ser un microservicio en términos de las responsabilidades que maneja. La granularidad de los servicios es un aspecto fundamental al diseñar arquitecturas de microservicios. Una correcta granularidad nos permite aprovechar al máximo las ventajas de dicha arquitectura o por el contrario, terminar con una arquitectura llena de problemas y difícil de mantener [1]
 ## Principios de diseño para definir la granularidad de los microservicios
 La definición de la granularidad en los microservicios debe centrarse en alcanzar un equilibrio adecuado, evitando caer en extremos como servicios demasiado grandes que terminan siendo un monolito disfrazado, o servicios demasiado pequeños que se convierten en nano-servicios difíciles de gestionar. Para guiar este diseño, se destacan principios fundamentales: la alta cohesión, que asegura que cada servicio tenga una responsabilidad clara; el bajo acoplamiento, que reduce dependencias entre servicios; la escalabilidad independiente, que permite crecer según las necesidades específicas; y la autonomía, que garantiza que cada microservicio pueda operar y evolucionar por sí mismo.
@@ -31,8 +32,13 @@ En cambio dentro del Bounded Context, un mismo concepto (como "Compra") puede es
 <img width="718" height="291" alt="image" src="https://github.com/user-attachments/assets/f5598c3e-585d-4531-9957-db4fdf4d2557" />
 
 ### Event storming
-Es una técnica colaborativa que ayuda a descubrir cómo funciona un negocio y cuáles son sus requerimientos, identificando eventos, actores, servicios externos y acciones relacionadas con las reglas de negocio. 
+Es una técnica colaborativa que ayuda a descubrir cómo funciona un negocio y cuáles son sus requerimientos, identificando eventos, actores, servicios externos y acciones relacionadas con las reglas de negocio. Event storming proporciona un entendimiento común y un lenguaje ubicuo. Es decir, todo problema lo podemos plasmar en diferentes esquemas o modelos y todos los miembros son capaces de entenderlo. En ningún momento entra en detalles técnicos, esa es la gran ventaja.
+#### ¿Porque usarlo?
+Porque todo los involucrados participan, opinan y deciden con el mismo objetivo y con el mismo lenguaje. Comparte visiones diferentes, opiniones y sobre todo con la misma meta.
+### Errores comunes
+Diseñar microservicios demasiado pequeños provoca exceso de comunicación entre servicios, mayor latencia y dificultad para orquestar procesos, lo que termina creando un “monolito disfrazado” sin autonomía ni escalabilidad. Además, cuando los límites se definen desde la tecnología y no desde los procesos del negocio, los servicios pierden cohesión y claridad en sus responsabilidades.
 
+Por otro lado, una mala división genera duplicación de información o procesos, inconsistencias y pérdida de eficiencia, sobre todo si se requieren demasiadas llamadas para completar una tarea. Si, además, los servicios no están preparados para crecer o dividirse, se convierten en un obstáculo para la escalabilidad y evolución del sistema.
 ## Referencias
 - [1] “Domain Driven Design: principios, beneficios y elementos — Primera Parte”, Víctor Martínez.[https://naylampmechatronics.com/blog/45_tutorial-mpu6050-acelerometro-y-giroscopio.html](https://medium.com/@vandresmartinez/granularidad-de-microservicios-3d58f3002120)
 - [2] “Granularidad de microservicios”, Jonathan Loscalzo. [https://medium.com/@jonathanloscalzo/domain-driven-design-principios-beneficios-y-elementos-primera-parte-aad90f30aa35](https://medium.com/@jonathanloscalzo/domain-driven-design-principios-beneficios-y-elementos-primera-parte-aad90f30aa35)
